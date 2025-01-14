@@ -1,0 +1,98 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 2%);
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-yellow);
+}
+
+.container {
+  max-width: 375px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--color-white);
+  min-height: 501px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 10px 10px 0px 2px rgba(0, 0, 0, 1);
+  border: 1px solid var(--color-gray-950);
+
+  img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+  }
+
+  .card-badge {
+    padding: 0.5rem;
+    background-color: var(--color-yellow);
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 800;
+    font-size: 13px;
+    text-align: center;
+    width: 25%;
+    border-radius: 5px;
+    text-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-publish-date {
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .card-content {
+    margin-bottom: 1.5rem;
+    p {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      line-height: 150%;
+    }
+  }
+
+  .card-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    h4 {
+      margin-left: 0.75rem;
+      font-size: 15px;
+      font-weight: 800;
+    }
+  }
+}

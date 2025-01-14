@@ -68,6 +68,12 @@ body {
       font-weight: 800;
       margin-bottom: 1rem;
     }
+
+    h2:hover {
+      color: var(--color-yellow);
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+    }
   }
 
   .card-content {
@@ -76,6 +82,12 @@ body {
       font-size: 14px;
       color: var(--color-gray-500);
       line-height: 150%;
+    }
+  }
+
+  @media (width >= 768px) {
+    .card-content {
+      font-size: 16px;
     }
   }
 
